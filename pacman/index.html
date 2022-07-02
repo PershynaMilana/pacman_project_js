@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pac-Man</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <style>
+        #gameCanvas {
+            box-shadow: 10px 10px 20px black;
+        }
+        h1 {
+            text-align: center;
+            font-family: comic sans MS;
+            color: lightgrey;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            height: 100vh;
+            background-image: url(/img/background.png);
+            background-size: 100%;
+        }
+        h2#score {
+            position: absolute;
+            top: 23%;
+            left: 5%;
+            font-family: Impact, fantasy;
+            color: azure;
+            font-stretch: ultra-expanded;
+            color: yellow;
+            -webkit-text-stroke: .03em rgb(57, 189, 194);
+            text-shadow: .1em 0 red;
+            font-size: 50px;
+        }
+        h2#bestscore {
+            position: absolute;
+            top: 33%;
+            left: 5%;
+            font-family: Impact, fantasy;
+            color: azure;
+            font-stretch: ultra-expanded;
+            color: yellow;
+            -webkit-text-stroke: .03em rgb(57, 189, 194);
+            text-shadow: .1em 0 red;
+            font-size: 50px;
+        }
+        h2#scoreres {
+            position: absolute;
+            top: 23.5%;
+            left: 20%;
+            font-family: Impact, fantasy;
+            color: azure;
+            font-stretch: ultra-expanded;
+            color: yellow;
+            -webkit-text-stroke: .03em rgb(57, 189, 194);
+            text-shadow: .1em 0 red;
+            font-size: 50px;
+        }
+        h2#bestscoreres {
+            position: absolute;
+            top: 33.5%;
+            left: 27%;
+            font-family: Impact, fantasy;
+            color: azure;
+            font-stretch: ultra-expanded;
+            color: yellow;
+            -webkit-text-stroke: .03em rgb(57, 189, 194);
+            text-shadow: .1em 0 red;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1><img src="/img/pacman_logo.png"></h1>
+        <canvas id="gameCanvas"></canvas>
+        <h2 id="score">S c o r e : </h2>
+        <h2 id="scoreres"> 0 </h2>
+        <h2 id="bestscore">B e s t s c o r e : </h2>
+        <h2 id="bestscoreres"> 0 </h2>
+    </div>
+    <script src="js/Game.js" type="module"></script>
+</body>
+</html>
